@@ -130,7 +130,7 @@ const howItWorksCards = [
   },
   {
     before: "\"Has Jamie paid yet?\" spreadsheet-hunting.",
-    after: "Card is charged at booking—cash lands next morning.",
+    after: "You can get paid the moment students book, and have cash immediately.",
     image: "/Stripepicture2.png"
   }
 ];
