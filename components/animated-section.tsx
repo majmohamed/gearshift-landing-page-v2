@@ -8,9 +8,10 @@ interface AnimatedSectionProps {
   className?: string;
   delay?: number;
   id?: string;
+  style?: React.CSSProperties;
 }
 
-export function AnimatedSection({ children, className, delay = 0, id }: AnimatedSectionProps) {
+export function AnimatedSection({ children, className, delay = 0, id, style }: AnimatedSectionProps) {
   const { ref, isIntersecting } = useIntersectionObserver({
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px',
@@ -27,6 +28,7 @@ export function AnimatedSection({ children, className, delay = 0, id }: Animated
       )}
       style={{
         transitionDelay: isIntersecting ? `${delay}ms` : '0ms',
+        ...style,
       }}
     >
       {children}
