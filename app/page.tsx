@@ -105,7 +105,7 @@ const roiCards = [
 const howItWorksCards = [
   {
     before: "Two-hour gaps sit empty.",
-    after: "GearShift text-blasts your wait-list and slot-fills in minutes.",
+    after: "Gearshift lets you ping students and fill slots in minutes.",
     image: "/Calv3tiny copy.gif"
   },
   {
