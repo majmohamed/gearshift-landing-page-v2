@@ -6,6 +6,7 @@ import { AnimatedSection } from '@/components/animated-section';
 import { TestimonialsMarquee } from '@/components/testimonials-marquee';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Check, Minus, MoveRight, PhoneCall } from "lucide-react";
 
 const testimonials = [
@@ -131,6 +132,45 @@ const howItWorksCards = [
     before: "\"Has Jamie paid yet?\" spreadsheet-hunting.",
     after: "Card is charged at booking—cash lands next morning.",
     image: "/Stripepicture2.png"
+  }
+];
+
+const faqData = [
+  {
+    question: "Is this just another expense?",
+    answer: "Nope — GearShift is designed to *make* you money. One extra lesson booked a month covers the full cost. Most instructors see more than that in week one."
+  },
+  {
+    question: "I'm not great with tech — will it be complicated?",
+    answer: "Not at all. If you can use WhatsApp or Facebook, you'll be fine. It's built to feel simple. And we'll guide you through setup in under 10 minutes."
+  },
+  {
+    question: "I already use my phone calendar and WhatsApp — why switch?",
+    answer: "That's the problem. Notes here, messages there, payments somewhere else — it's chaos. GearShift puts everything in one place so nothing falls through the cracks."
+  },
+  {
+    question: "Will it take ages to set up?",
+    answer: "No. You answer a few quick questions, and it's ready. Most instructors go from zero to live in under 10 minutes — and we're here if you get stuck."
+  },
+  {
+    question: "What if students ghost me or stop replying?",
+    answer: "GearShift nudges them automatically. It's like having an assistant chasing them for you — and they're much more likely to rebook when the reminder isn't from you."
+  },
+  {
+    question: "Do I still need to chase payments?",
+    answer: "Nope. Students get automatic reminders and can pay directly in the app. You just get a Stripe notification saying \"£200 received\" — job done."
+  },
+  {
+    question: "Is this secure?",
+    answer: "Yes — everything runs through Stripe and follows strict data protection rules. We don't mess about when it comes to security."
+  },
+  {
+    question: "What if I just want to keep it simple?",
+    answer: "Then this is made for you. It removes the faff. No spreadsheets, no chasing. Just one tap to offer a slot, log a lesson, or take a payment."
+  },
+  {
+    question: "Can I try it without paying?",
+    answer: "Absolutely — the beta test is a trial without payment to begin with. You'll know within days if it's for you. No pressure."
   }
 ];
 
@@ -438,12 +478,48 @@ export default function GearshiftLanding() {
         title="What We're Hearing"
         testimonials={testimonials}
         className="py-20"
+        id="testimonials"
       />
+
+      {/* FAQ Section */}
+      <AnimatedSection className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: '#33373F' }}>
+              Not quite convinced? Here's some Q&A
+            </h2>
+          </div>
+
+          <Accordion type="single" collapsible className="space-y-4">
+            {faqData.map((faq, index) => (
+              <AccordionItem 
+                key={index} 
+                value={`item-${index}`}
+                className="rounded-2xl border-0 shadow-sm"
+                style={{ backgroundColor: '#F7F5F2' }}
+              >
+                <AccordionTrigger 
+                  className="px-8 py-6 text-left text-lg font-semibold hover:no-underline"
+                  style={{ color: '#33373F' }}
+                >
+                  {faq.question}
+                </AccordionTrigger>
+                <AccordionContent 
+                  className="px-8 pb-6 text-base leading-relaxed"
+                  style={{ color: '#8A8A8A' }}
+                >
+                  {faq.answer}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </div>
+      </AnimatedSection>
 
       {/* CTA Section */}
       <AnimatedSection className="py-20" style={{ backgroundColor: '#33373F' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8" style={{ color: '#8A8A8A' }}>
+          <h2 className="text-3xl md:text-4xl font-bold mb-8" style={{ color: '#33373F' }}>
             Ready to recover all that revenue you've been missing out on?
           </h2>
           <div className="flex justify-center">
