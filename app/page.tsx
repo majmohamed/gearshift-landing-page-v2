@@ -110,7 +110,7 @@ const howItWorksCards = [
   },
   {
     before: "Lose track of interested future learners.",
-    after: "Clear log of potential leads with reminders at the right time.",
+    after: "Log potential leads with reminders at the right time.",
     image: "/ProspectiveLeads.jpeg"
   },
   {
