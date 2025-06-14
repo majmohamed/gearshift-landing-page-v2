@@ -125,7 +125,7 @@ const howItWorksCards = [
   },
   {
     before: "Scribbled lesson notes lost in the car.",
-    after: "One tap logs progress and sets the next-lesson goal.",
+    after: "Track lesson progress easily and get reminders before the next lesson.",
     image: "/Progressv3tiny.gif"
   },
   {
