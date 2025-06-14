@@ -483,7 +483,7 @@ export default function GearshiftLanding() {
 
       {/* Testimonials Section */}
       <TestimonialsMarquee
-        title="What We're Hearing"
+        title="What we're hearing"
         testimonials={testimonials}
         className="py-20 bg-white"
         id="testimonials"
