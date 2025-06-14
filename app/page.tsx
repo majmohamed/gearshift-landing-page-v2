@@ -119,7 +119,7 @@ const howItWorksCards = [
     image: "/BlockPayments.jpeg"
   },
   {
-    before: "Ghost students vanish after test-fails.",
+    before: "Students vanish after test-fails or a holiday.",
     after: "Smart nudges revive them and auto-book the next lesson.",
     image: "/Nudgev3tiny.gif"
   },
