@@ -115,7 +115,7 @@ const howItWorksCards = [
   },
   {
     before: "Endless \"U free next week?\" WhatsApps.",
-    after: "Get more block bookings and have you diary auto-populate.",
+    after: "Get more packages sold and lessons sorted in advance.",
     image: "/BlockPayments.jpeg"
   },
   {
