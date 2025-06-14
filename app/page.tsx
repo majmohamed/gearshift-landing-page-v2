@@ -115,7 +115,7 @@ const howItWorksCards = [
   {
     before: "Endless \"U free next week?\" WhatsApps.",
     after: "Students pre-pay 10-lesson blocks; diary auto-populates.",
-    image: "https://via.placeholder.com/400x600"
+    image: "/BlockPayments.jpeg"
   },
   {
     before: "\"Has Jamie paid yet?\" spreadsheet-hunting.",
