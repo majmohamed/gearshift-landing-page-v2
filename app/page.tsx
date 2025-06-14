@@ -284,7 +284,7 @@ export default function GearshiftLanding() {
                 >
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style={{ backgroundColor: '#ECE6DC' }}>
-                      <IconComponent className="h-6 w-6" style={{ color: '#33373F' }} />
+                      <IconComponent className="h-6 w-6" style={{ color: '#4CAF75' }} />
                     </div>
                     <div className="flex-1">
                       <div className="text-xs font-bold uppercase tracking-wide mb-2" style={{ color: '#8A8A8A' }}>
