@@ -79,7 +79,7 @@ const roiCards = [
   {
     problem: "Wasted, empty slots",
     fix: "Auto-offers sent to active students",
-    revenue: "+£60–£90/wk",
+    revenue: "+£60–£90/mo",
     icon: Target
   },
   {
