@@ -7,9 +7,10 @@ interface AnimatedSectionProps {
   children: React.ReactNode;
   className?: string;
   delay?: number;
+  id?: string;
 }
 
-export function AnimatedSection({ children, className, delay = 0 }: AnimatedSectionProps) {
+export function AnimatedSection({ children, className, delay = 0, id }: AnimatedSectionProps) {
   const { ref, isIntersecting } = useIntersectionObserver({
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px',
@@ -18,6 +19,7 @@ export function AnimatedSection({ children, className, delay = 0 }: AnimatedSect
   return (
     <section
       ref={ref}
+      id={id}
       className={cn(
         'opacity-0 translate-y-8 transition-all duration-700 ease-out',
         isIntersecting && 'opacity-100 translate-y-0',
