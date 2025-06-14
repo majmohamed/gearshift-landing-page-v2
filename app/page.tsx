@@ -185,17 +185,16 @@ export default function GearshiftLanding() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0 flex items-center">
-                <div className="w-8 h-8 rounded-lg flex items-center justify-center mr-3" style={{ backgroundColor: '#33373F' }}>
-                  <span className="text-white font-bold text-lg">G</span>
-                </div>
-                <span className="text-xl font-bold" style={{ color: '#33373F' }}>Gearshift</span>
+                <img 
+                  src="/Gearshift Logo Final.png" 
+                  alt="Gearshift Logo" 
+                  className="h-8 w-auto"
+                />
               </div>
             </div>
             
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-8">
-                <a href="#features" className="px-3 py-2 text-sm font-medium transition-colors" style={{ color: '#33373F' }}>Features</a>
-                <a href="#testimonials" className="px-3 py-2 text-sm font-medium transition-colors" style={{ color: '#33373F' }}>Reviews</a>
                 <Button className="text-white font-medium" style={{ backgroundColor: '#4CAF75' }}>
                   Sign up for trial
                 </Button>
@@ -218,8 +217,6 @@ export default function GearshiftLanding() {
         {mobileMenuOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t" style={{ borderColor: '#DCD6CD' }}>
-              <a href="#features" className="block px-3 py-2 text-base font-medium" style={{ color: '#33373F' }}>Features</a>
-              <a href="#testimonials" className="block px-3 py-2 text-base font-medium" style={{ color: '#33373F' }}>Reviews</a>
               <div className="px-3 py-2">
                 <Button className="w-full text-white font-medium" style={{ backgroundColor: '#4CAF75' }}>
                   Sign up for trial
