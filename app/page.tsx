@@ -108,9 +108,9 @@ const howItWorksCards = [
     image: "/Calv3tiny copy.gif"
   },
   {
-    before: "Ghost students vanish after test-fails.",
-    after: "Smart nudges revive them and auto-book the next lesson.",
-    image: "/Nudgev3tiny.gif"
+    before: "Lose track of interested future learners.",
+    after: "Clear log of potential leads with reminders at the right time.",
+    image: "/ProspectiveLeads.jpeg"
   },
   {
     before: "Endless \"U free next week?\" WhatsApps.",
@@ -118,9 +118,9 @@ const howItWorksCards = [
     image: "/BlockPayments.jpeg"
   },
   {
-    before: "\"Has Jamie paid yet?\" spreadsheet-hunting.",
-    after: "Card is charged at booking—cash lands next morning.",
-    image: "/Stripepicture2.png"
+    before: "Ghost students vanish after test-fails.",
+    after: "Smart nudges revive them and auto-book the next lesson.",
+    image: "/Nudgev3tiny.gif"
   },
   {
     before: "Scribbled lesson notes lost in the car.",
@@ -128,9 +128,9 @@ const howItWorksCards = [
     image: "/Progressv3tiny.gif"
   },
   {
-    before: "Lose track of interested future learners.",
-    after: "Clear log of potential leads with reminders at the right time.",
-    image: "/ProspectiveLeads.jpeg"
+    before: "\"Has Jamie paid yet?\" spreadsheet-hunting.",
+    after: "Card is charged at booking—cash lands next morning.",
+    image: "/Stripepicture2.png"
   }
 ];
 
