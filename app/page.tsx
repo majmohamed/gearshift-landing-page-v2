@@ -302,6 +302,17 @@ export default function GearshiftLanding() {
               );
             })}
           </div>
+
+          {/* Orange Button */}
+          <div className="text-center mt-12">
+            <Button 
+              size="lg" 
+              className="text-white font-medium px-8 py-4 text-lg hover:opacity-90 transition-opacity"
+              style={{ backgroundColor: '#F29E4C' }}
+            >
+              Find out how much cash you're missing out on at the moment
+            </Button>
+          </div>
         </div>
       </AnimatedSection>
 
