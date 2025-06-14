@@ -317,7 +317,7 @@ export default function GearshiftLanding() {
       </AnimatedSection>
 
       {/* How It Works Section */}
-      <AnimatedSection className="py-20" id="features">
+      <AnimatedSection className="py-20" id="features" style={{ backgroundColor: '#ECE6DC' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: '#33373F' }}>
@@ -488,12 +488,12 @@ export default function GearshiftLanding() {
       <TestimonialsMarquee
         title="What We're Hearing"
         testimonials={testimonials}
-        className="py-20"
+        className="py-20 bg-white"
         id="testimonials"
       />
 
       {/* FAQ Section */}
-      <AnimatedSection className="py-20 bg-white">
+      <AnimatedSection className="py-20" style={{ backgroundColor: '#ECE6DC' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: '#33373F' }}>
@@ -528,7 +528,7 @@ export default function GearshiftLanding() {
       </AnimatedSection>
 
       {/* CTA Section */}
-      <AnimatedSection className="py-20" style={{ backgroundColor: '#33373F' }}>
+      <AnimatedSection className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-8" style={{ color: '#33373F' }}>
             Ready to recover all that revenue you've been missing out on?

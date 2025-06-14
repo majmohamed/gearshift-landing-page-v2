@@ -12,19 +12,21 @@ interface TestimonialsMarqueeProps {
     rating?: number
   }>
   className?: string
+  id?: string
 }
 
 export function TestimonialsMarquee({ 
   title,
   description,
   testimonials,
-  className 
+  className,
+  id
 }: TestimonialsMarqueeProps) {
   return (
     <section className={cn(
       "py-20",
       className
-    )} style={{ backgroundColor: '#ECE6DC' }}>
+    )} id={id}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: '#33373F' }}>
@@ -53,10 +55,10 @@ export function TestimonialsMarquee({
 
           {/* Gradient overlays for smooth fade effect */}
           <div 
-            className="pointer-events-none absolute inset-y-0 left-0 w-1/6 bg-gradient-to-r from-[#ECE6DC] to-transparent" 
+            className="pointer-events-none absolute inset-y-0 left-0 w-1/6 bg-gradient-to-r from-white to-transparent" 
           />
           <div 
-            className="pointer-events-none absolute inset-y-0 right-0 w-1/6 bg-gradient-to-l from-[#ECE6DC] to-transparent" 
+            className="pointer-events-none absolute inset-y-0 right-0 w-1/6 bg-gradient-to-l from-white to-transparent" 
           />
         </div>
       </div>
