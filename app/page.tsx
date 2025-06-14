@@ -83,7 +83,7 @@ const roiCards = [
     icon: Target
   },
   {
-    problem: "Ghost students",
+    problem: "Students ghosting you",
     fix: "Nudges old students to rebook",
     revenue: "+£100–£200/mo",
     icon: Zap
