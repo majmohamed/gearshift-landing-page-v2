@@ -200,7 +200,7 @@ export default function GearshiftLanding() {
                 Your empty slots are costing you £300 a month. <span style={{ color: '#4CAF75' }}>Gearshift fixes that.</span>
               </h1>
               <p className="text-xl md:text-2xl mb-8 opacity-0 animate-fade-in-up delay-400" style={{ color: '#8A8A8A' }}>
-                Stop juggling WhatsApp, paper notes, and late payments. GearShift fills your calendar and gets you paid.
+                Stop juggling WhatsApp, post-its, and late payments. GearShift fills your diary and gets you paid.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start opacity-0 animate-fade-in-up delay-600">
                 <Button size="lg" className="text-white font-medium px-8 py-4 text-lg" style={{ backgroundColor: '#4CAF75' }}>
