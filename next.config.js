@@ -5,6 +5,8 @@ const nextConfig = {
   },
   images: { unoptimized: true },
   trailingSlash: true,
+  // Conditionally set output to 'export' only for static builds
+  ...(process.env.NEXT_BUILD_STATIC === 'true' && { output: 'export' }),
 };
 
 module.exports = nextConfig;
